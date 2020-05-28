@@ -1,1 +1,1 @@
-https://github.com/bnsganesh/Smart-Rescue-System.git
+We had created a data set in which all types of Gestures and Objects are included and Trained. which helps to recognize and detect various Hand Gestures, Signs , objects and persons. By using this data set, python code works on the live Feed of FPV. When any Person detected then it sends co- ordinates provided by GPS to ground unit through GSM. This Entire System placed on the UAV. UAV will traveled in the affected region which is mapped by Ground Unit.
