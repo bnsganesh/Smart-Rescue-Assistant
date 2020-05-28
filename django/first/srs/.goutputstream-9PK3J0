@@ -1,0 +1,20 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+import sys
+from subprocess import run,PIPE
+
+# Create your views here.
+
+def index(request):
+    return render(request,"index.html")
+
+
+def ask(request):
+
+    val1=request.GET['name']
+    val2=request.GET['selection']
+    out=run([sys.executable,'//home//ganesh1bns//Desktop//new.py'],shell=False,stdout=PIPE)
+
+    return render(request,"index.html")
+

@@ -1,0 +1,320 @@
+{% load static %}
+
+<!-- Developed and Designed by Team Evolvers, Acharya Nagarjuna University -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Team Evolvers</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+
+
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="{% static 'css/tooplate-style.css'%}">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+<div class="preloader">
+     <div class="spinner">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+
+<!-- MENU -->
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <div class="container">
+
+          <!-- NAVBAR HEADER -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!-- lOGO -->
+               <a href="" class="navbar-brand">Evolvers</a>
+          </div>
+
+          <!-- MENU LINKS -->
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li> 
+                    <li><a href="#contact" class="smoothScroll">Let's talk</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- HOME -->
+<section id="home" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-8 col-sm-12">
+                    <div class="home-text">
+                         <h1><font face="Garamond" size ="42" >Smart Rescue System</h1></font>
+                         <p><font face="sofia" size="2">uisng Unmanned Aerial Vehicle and Object-Recognition to eliminates delay of Response in Disaster</p>
+                         <ul class="section-btn">
+                              <a href="" class="smoothScroll"data-toggle="modal" data-target="#pro"><span data-hover="Open Project">Project</span></a>
+                              <a href="http://www.cloudchip.io/dashboard/90fc26a0-9efd-11ea-9ae9-61157604288a?publicId=3cc85800-9eea-11ea-9ae9-61157604288a" class="smoothScroll"><span data-hover="View Result">Result</span></a>
+                         </ul>
+                    </div>
+               </div>
+
+
+                                <div class="container">
+                                    <font face="comic sans ms">
+                                    <div class="modal zoom" id="pro" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+				                                    <div class="w3-center"><br>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button> </br></br> 
+                                                            <center><img src="{% static 'images/img_avatar4.png' %}" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                                                                <form action="ask"> </br>
+                                                                    <input type="text" placeholder="Enter your Name" name="name" required></br></br>
+                                                                    <select name="service" required>
+                                                                    <option value="none">Select service...</option>
+                                                                    <option value="rescue">Rescue System.</option>
+                                                                    <option value="traffic">Traffic Rules Violation</option>
+                                                                    <option value="weapon">Criminal or Weapon Detection</option>
+                                                                    </select>                </br></br></br>
+                                                                    <button type="submit"  style="box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); border-radius: 8px;font-size: 16px;padding: 12px 36px;border: 2px solid #4CAF50;">Launch</button>
+                                                                </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+          </div>
+     </div>
+
+     <!-- Video -->
+     <video controls autoplay loop muted>
+          <source src="{% static 'videos/video.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+     </video>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="about-info">
+                         <h3>Our Work</h3>
+			<font face = "Courier New" size =" 5">
+                         <h4>We had created a Dataset in which all types of Gestures and Objects will be included and Trained. which helps Jetson-Nano Dev Kit and Python Libraries to recognize and detect various Hand Gestures, Signs , objects and persons. We had UAVs instead of Helicopters and Land-Vehicles for transport purpose. And we had attached FPV(Camera), GSM and GPS modules along with above mentioned Kit and UAV, which detects Real-time objects and Tracks location then sends location along with visuals. So that, the Rescue team will go to the location and rescues the Tracked or Recognized people or object. And they'll also have the live Feed, therefore they can use understood. SRS also supplies some essential items like medicine to the Victim before Rescue team reaches them.</h4>
+			</font>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- PROJECT -->
+<section id="project" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+                         <a href="images/project-image1.png" class="image-popup">
+                              <img src="{% static 'images/project-image1.png'%}" class="img-responsive" alt="">
+                         
+                              <div class="project-overlay">
+                                   <div class="project-info">
+                                       <h1>Story</h1>
+                                        <h3>Motivation!</h3>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+                         <a href="images/project-image2.png" class="image-popup">
+                              <img src="{% static 'images/project-image2.png' %}" class="img-responsive" alt="">
+                         
+                              <div class="project-overlay">
+                                   <div class="project-info">
+                                        <h1>Motto</h1>
+                                        <h3>Team Vyakta</h3>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+                         <a href="images/project-image3.png" class="image-popup">
+                              <img src="{% static 'images/project-image3.png'%}" class="img-responsive" alt="">
+                         
+                              <div class="project-overlay">
+                                   <div class="project-info">
+                                        <h1>Market</h1>
+                                        <h3>Custemors</h3>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+                         <a href="images/project-image4.png" class="image-popup">
+                              <img src="{% static 'images/project-image4.png' %}" class="img-responsive" alt="">
+                         
+                              <div class="project-overlay">
+                                   <div class="project-info">
+                                        <h1>Revenue</h1>
+                                        <h3>Growth</h3>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+               </div>               
+
+          </div>
+     </div>
+</section>
+                                                                                                      -->
+<!-- CONTACT -->
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-3 col-md-6 col-sm-12">
+                    <div class="section-title">
+                         <h1>Talk to us!</h1>
+                    </div>
+               </div>
+
+               <div class="clearfix"></div>
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <!-- CONTACT FORM HERE -->
+                    <form id="contact-form" action="#" method="get" role="form">
+
+                         <!-- IF MAIL SENT SUCCESSFULLY -->
+                         <h6 class="text-success">Your message has been sent successfully. </h6>
+                         
+                         <!-- IF MAIL SENDING UNSUCCESSFULL -->
+                         <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+
+                         <div class="col-md-6 col-sm-6">
+                              <input type="text" class="form-control" id="cf-name" name="cf-name" placeholder="Name">
+                         </div>
+
+                         <div class="col-md-6 col-sm-6">
+                              <input type="email" class="form-control" id="cf-email" name="cf-email" placeholder="Email Address">
+                         </div>
+
+                         <div class="col-md-12 col-sm-12">
+                              <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+                              <textarea class="form-control" rows="5" id="cf-message" name="cf-message" placeholder="Message"></textarea>
+                         </div>
+
+                         <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4">
+                              <div class="section-btn">
+                                   <button type="submit" class="form-control" id="cf-submit" name="submit"><span data-hover="Send Message">Send Message</span></button>
+                              </div>
+                         </div>
+                    </form>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-sm-6">
+                    <h2>Team Evolvers</h2>
+                    <p>Start-up and Innovation Cell,<br> Acharya Nagarjuna University,<br> Andhra Pradesh</p>
+                    
+                    
+               </div>
+
+               <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                    	<h2>Keep in touch</h2>
+                         <p><a href="tel:010-090-0780">90 521 91 523</a></p>
+                         <p><a href="mailto:info@company.com">ganesh1bns@gmail.com</a></p>
+                         <p><a href="https://goo.gl/maps/8awdsmuHQAR3A7bo8">Our Location</a></p>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-12">
+               		
+                    <h2>About Us</h2>
+                    <p>We does Web-Development, Android Projects, Innovation things and many more</p>
+                    <ul class="social-icon">
+                         <li><a href="https://twitter.com/bnsganesh" class="fa fa-twitter"></a></li>
+                         <li><a href="https://www.linkedin.com/in/bnsganesh/" class="fa fa-linkedin"></a></li>
+			 <li><a href="https://github.com/bnsganesh" class="fa fa-github"></a></li>
+                    </ul>
+                    
+               </div>
+
+              
+     </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+</html>

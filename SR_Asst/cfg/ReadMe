@@ -1,0 +1,5 @@
+Please Download cfg files from the provided link and place in this cfg directory....
+https://pjreddie.com/darknet/yolo/
+https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg
+
+Name the Downloaded File as cfg-file.cfg

@@ -1,0 +1,5 @@
+Please Download weights files from the provided link and place in this weights directory....
+https://pjreddie.com/darknet/yolo/
+https://pjreddie.com/media/files/yolov3.weights
+
+Name the Downloaded File as weights/weight-file.weights
